@@ -1,0 +1,83 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "_reset";
+@import "_mixins";
+
+.wrapper {
+  min-width: 750px;
+  background-color: gray;
+}
+.menu {
+  display: inline-block;
+  &-wrapper {
+   width: 650px;
+   margin: auto;
+  }
+  &-item {
+    position: relative;
+    width: 100px;
+    height: 26px;
+    line-height: 26px;
+    padding: 6px 0 6px 0;
+    background-color: gray;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    transition: all .3s ease-out;
+  }
+  &-item-bl {
+    position: absolute;
+    top: 38px;
+    display: none;
+
+    &-two {
+      position: absolute;
+      top: 0px;
+      left: 100px;
+      display: none;
+    }
+    &-three {
+      position: absolute;
+      top: 0px;
+      left: 100px;
+      display: none;
+    }
+  }
+  &-item-two {
+    position: relative;
+    width: 100px;
+    height: 26px;
+    line-height: 26px;
+    padding: 6px 0 6px 0;
+    background-color: gray;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    transition: all .3s ease-out;
+  }
+  &-item a {
+    text-decoration: none;
+  }
+  &-item:hover {
+    background-color: red;
+  }
+  &-item-one:hover .menu-item-bl {
+    display: block;
+  }
+  &-item-two:hover {
+    background-color: red;
+  }
+}
+.item-one-list-one:hover .menu-item-bl-two {
+  display: block;
+}
+.item-one-list-two:hover .menu-item-bl-three {
+  display: block;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "menu",
+  "version": "0.0.1",
+  "description": "menu",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.0",
+    "load-grunt-config": "^0.19.2"
+  }
+}
